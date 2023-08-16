@@ -202,7 +202,7 @@ html{
     height: 50px;
     font-size: 24px;
     color: #fff;
-    background:linear-gradient( 180deg,#BC10D8 0%,rgba(80,0,250,0.93) 100% ); aqua;
+    background:linear-gradient( 180deg,#BC10D8 0%,rgba(80,0,250,0.93) 100% ); 
     transition: 0.5s;
 }
 .mobile-list li a:hover{
