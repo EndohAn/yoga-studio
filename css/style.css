@@ -381,7 +381,7 @@ html{
     grid-column:2/3 ;
     width: 280px;
     height: 150px;
-    background-image: url(../images/top-img.jpg);
+    background-image: url(../images/video.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -395,9 +395,8 @@ html{
     font-size: 13px;
     color:#F6F4F5;
   }
-  .video btn{
-    margin-left: 22px;
-    
+  .video_btn{
+    margin-left: 22px;      
   }
   .video-link{
     cursor: pointer;
