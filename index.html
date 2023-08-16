@@ -18,30 +18,35 @@
               </a>
             <ul class="menu">
               <li class="menu_list">
-                <a href="#" class="menu_link">О нас</a>
+                <a href="#about" class="menu_link">О нас</a>
               </li>
               <li class="menu_list">
-                <a href="#" class="menu_link">Наши практики</a>
+                <a href="#features" class="menu_link">Наши практики</a>
               </li>
               <li class="menu_list">
-                <a href="#" class="menu_link">Цена</a>
+                <a href="#price" class="menu_link">Цена</a>
               </li>
               <li class="menu_list">
-                <a href="#" class="menu_link">Контакты</a>
+                <a href="#contacts" class="menu_link">Контакты</a>
               </li>
             </ul>
             <a href="mailto: yoga-studio@gmail.com" class="email">yoga-studio@gmail.com</a>
             
-            <a  href="#"><button type="button" class="btn-header ">Позвонить</button></a>
-            <!-- <a href="#" class="basket">
-              <img src=""alt="basket">
-              <span>1</span>
-            </a> -->
+            <a  href="#"><button type="button" class="btn-header ">Позвонить</button></a>           
           </nav>
+          <div class="navigation">
+            <div class="toggle"><span></span></div>
+            <ul class="mobile-list">
+                <li class="mobile-nav-link" style="--i:0"><a href="#">О нас</a></li>
+                <li class="mobile-nav-link" style="--i:1"><a href="#">Наши практики</a></li>
+                <li class="mobile-nav-link" style="--i:2"><a href="#">Цена</a></li>
+                <li class="mobile-nav-link" style="--i:3"><a href="#">Контакты</a></li>                
+            </ul>
+        </div>
         </div>
       </header>
 
-<main class="main">
+ <main class="main">
   <section class="top">
     <div class="container">
       <h1 class="title">Йога-Студио</h1>
@@ -54,11 +59,13 @@
           </button></a>       
         </div>
       </section>      
-      <section class="about">
+      <section id ="about">
         <div class="container">
           <h1 class="about-title">О нас</h1>
           <div class="about-wrapper">
-          <img class="about-img" src="images/studio.jpg" alt="yoga-studio">
+            <div>
+          <img class="about-img" src="images/studio.jpg"  alt="yoga-studio">
+        </div>
           <div class="about-text">
           <p class="about-subtitle"> Мы рады приветствовать Вас в нашем пространстве!
             Yoga-Studio это прежде всего студия развития навыка управления своим вниманием с помощью йоги и медитации.
@@ -69,7 +76,7 @@
         </div>
     
       </section>
-    <section class="features">
+    <section id="features">
       <div class="container">
         <div class="features_titles">
           <h2 class="features_title section_title">Наши направления</h2>
@@ -192,7 +199,7 @@
         </div>
       </div>
     </section>
-    <section class="blog">
+     <section class="blog">
       <div class="container">
         <h2 class="section_title blog_title">Йога</h2>
         <div class="blog_inner">
@@ -203,6 +210,7 @@
             </p>
             <a class="blog_link" href="#" >Записаться</a>
           </div>
+
           <div class="blog_item">
             <img class="blog_item_img" src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fG1lZGl0YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60" alt="yoga-photo">
             <h3 class="blog_item_title">
@@ -246,14 +254,14 @@
       </button>     
     </div>
     </div>
-    <section class="price">
+    <section id="price">
       <div class="container">
         <h3 class="section-heading">Наши цены</h3>
         <div class="prices-container">
           <div class="prices-bg">
               <div class="prices-text-container">
                   <div>
-                      <!-- <img class="bullet-tick" src="resources/green checkmark.png" alt=" green checkmark"/> -->
+                      
                       <span class="price-item">Пробное занятие:</span>
                   </div>
                   <p class="price-p"> 500 рублей</p>
@@ -262,7 +270,7 @@
           <div class="prices-bg">
               <div class="prices-text-container">
                   <div>
-                      <!-- <img class="bullet-tick" src="resources/green checkmark.png" alt=" green checkmark"/> -->
+                     
                       <span class="price-item">Абонемент на 5 занятий:</span>
                   </div>
                   <p class="price-p"> 4000 рублей</p>
@@ -280,7 +288,7 @@
           <div class="prices-bg">
               <div class="prices-text-container">
                   <div>
-                      <!-- <img class="bullet-tick" src="resources/green checkmark.png" alt=" green checkmark"/> -->
+                      
                       <span class="price-item">Индивидуальное занятие:</span>
                   </div>
                   <p class="price-p"> 3500 рублей</p>
@@ -288,7 +296,7 @@
           </div>
       </div>
     </section>
-    <section class="contacts">
+     <section id="contacts">
       <div class="container">        
     <div class="contacts-container">
       <div class="contacts-text">
@@ -307,17 +315,17 @@
           </svg>Хабаровск,К.Маркса 141</li>
         </ul>
       </div>
-      <div>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.7184947252425!2d135.11461926378044!3d48.50529289575259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efae9f1968a55c9%3A0x385e879ec141c2af!2z0JTQvtC8INC60YDQsNGB0L7RgtGLINCk0LjQntC90LAgfCDQm9GD0YfRiNC40LUg0YLQvtCy0LDRgNGLINC4INGD0YHQu9GD0LPQuCDQlNCw0LvRjNC90LXQs9C-INCS0L7RgdGC0L7QutCwLCAyMDIxINCz0L7QtA!5e0!3m2!1sja!2sjp!4v1691757821832!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.7184947252425!2d135.11461926378044!3d48.50529289575259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efae9f1968a55c9%3A0x385e879ec141c2af!2z0JTQvtC8INC60YDQsNGB0L7RgtGLINCk0LjQntC90LAgfCDQm9GD0YfRiNC40LUg0YLQvtCy0LDRgNGLINC4INGD0YHQu9GD0LPQuCDQlNCw0LvRjNC90LXQs9C-INCS0L7RgdGC0L7QutCwLCAyMDIxINCz0L7QtA!5e0!3m2!1sja!2sjp!4v1691757821832!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
     </div>
   </div>
   </section>     
    </main>   
    <hr>
-   <footer>
+   <footer> 
     <p>
-      © 2023 created Endoh Anna
+      © 2023 created by Endoh Anna
   </p>&nbsp &nbsp
   <a href="https://endoh-anna-portfolio.glitch.me" target="_blank">
       Создание сайтов

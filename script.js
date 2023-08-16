@@ -1,4 +1,11 @@
 "use strict"
+
+let navigation=document.querySelector('.navigation');
+document.querySelector('.toggle').onclick =function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+
 const tabItem= document.querySelectorAll('.tabs_btn_item');
 const tabContent =document.querySelectorAll('.tabs_content_item');
 
@@ -21,3 +28,4 @@ function openItem(e){
     tabTarget.classList.add('tabs_btn_item-active');
     document.querySelector(`#${button}`).classList.add('tabs_content_item-active');
 }
+
